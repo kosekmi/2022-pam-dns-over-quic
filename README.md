@@ -24,19 +24,19 @@ The following tools were developed for our paper
 In order to enable the reproduction of our ﬁndings, we make the raw data of our measurements as well as the analysis scripts and supplementary ﬁles publicly available within this repository. Please note, that our analysis scripts use ip-api (https://ip-api.com) for IP-to-Geolocation mapping, and Caida ASRank (https://asrank.caida.org) for IP-to-AS mapping. Due to changes in IP ownership, the data derived from the APIs might change over time. For our paper, we queried the APIs on the 31.01.2022.
 
 1. Preparations
-* Clone this repository to a machine running "Jupyter Notebook" or "JupyterLab"
+* Clone this repository to a machine running ```Jupyter Notebook``` or ```JupyterLab```
 * To minimize performance degradation through swapping, use a machine with at least 32GB of RAM 
 
 2. Adoption
-* Switch to the "adoption/" directory
-* Extract the DoUDP adoption measurement csvs: "tar -xvf 05-07-2021-53.csv.tar.gz", "tar -xvf 17-01-2022-53.csv.tar.gz"
-* Run the Jupyter Notebook "adoption.ipynb" 
+* Switch to the ```adoption/``` directory
+* Extract the DoUDP adoption measurement csvs: ```tar -xvf 05-07-2021-53.csv.tar.gz``` and ```tar -xvf 17-01-2022-53.csv.tar.gz```
+* Run the Jupyter Notebook ```adoption.ipynb```
 
 3. Performance
-* Switch to the "performance/" directory
-* Concatenate the partial performance measurements files: "cat measurements.w03.db.tar.gz.part.* > measurements.w03.db.tar.gz"
-* Extract the performance measurements sqlite db: "tar -xvf measurements.w03.db.tar.gz"
-* Run the Jupyter Notebook "performance.ipynb" 
+* Switch to the ```performance/``` directory
+* Concatenate the partial performance measurements files: ```cat measurements.w03.db.tar.gz.part.* > measurements.w03.db.tar.gz```
+* Extract the performance measurements sqlite db: ```tar -xvf measurements.w03.db.tar.gz```
+* Run the Jupyter Notebook ```performance.ipynb```
 
 ---
 
