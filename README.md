@@ -25,7 +25,9 @@ In order to enable the reproduction of our ﬁndings, we make the raw data of ou
 
 1. Preparations
 * Clone this repository to a machine running ```Jupyter Notebook``` or ```JupyterLab```
-* To minimize performance degradation through swapping, use a machine with at least 32GB of RAM 
+* * To minimize performance degradation through swapping, use a machine with at least 32GB of RAM 
+* Switch to the cloned directory
+* Run ```git lfs pull``` in order to retrieve the raw data
 
 2. Adoption
 * Switch to the ```adoption/``` directory
