@@ -28,8 +28,8 @@ In order to enable the reproduction of our ﬁndings, we make the raw data of ou
 * The supplementary file ```Countries-Continents.csv``` is used within the analysis scripts to refine the continents of the IP-to-Gelocation mapping
 * The supplementary file ```public-resolvers-ipv4s.csv``` is used within the analysis scripts to check the identified DoQ resolvers against a list of known public resolvers used in related work
 * The folder ```adoption``` contains the DoUDP ZMap measurements from the first and the last week of the measurement study
-* The folder ```misc``` contains the negotiated DoQ as well as QUIC versions and the X.509 certificates of all DoQ verified resolvers during the measurement study
-* The folder ```performance``` contains the performance measurements of our study
+* The folder ```misc``` contains the negotiated DoQ as well as QUIC versions and the X.509 certificates of all DoQ verified resolvers during the measurement study. In addition, the databases also contain the measurement results for the ```edns-tcp-keepalive``` DNS extension, ```TCP Fast Open```, as well as ```QUIC 0-RTT```
+* The folder ```performance``` contains the performance measurements of our study. In addition, the database also contains the ```qlogs``` of the DoQ measurements, and the protocol-specific RTT measurements (traceroutes) using UDP, TCP, and QUIC
 
 1. Preparations
 * Clone this repository to a machine running ```Jupyter Notebook``` or ```JupyterLab```
