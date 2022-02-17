@@ -4,7 +4,11 @@ Mike Kosek | Trinh Viet Doan | Malte Granderath | Vaibhav Bajpai
 Technical University of Munich
 
 
-[PAM 2022](https://pam2022.nl/), March 28&ndash;30, 2022. [Pre-print &rarr;] https://arxiv.org/abs/2202.02987
+[PAM 2022](https://pam2022.nl/), March 28&ndash;30, 2022.
+
+[Pre-print &rarr;] https://arxiv.org/abs/2202.02987
+
+[Dataset &rarr;] https://doi.org/10.14459/2022mp1647204
 
 ---
 
@@ -27,25 +31,25 @@ In order to enable the reproduction of our ﬁndings, we make the raw data of ou
 * The files ```adoption.ipynb``` and ```performance.ipynb``` are the analysis scripts for the ```adoption``` and ```performance``` measurements
 * The supplementary file ```Countries-Continents.csv``` is used within the analysis scripts to refine the continents of the IP-to-Gelocation mapping
 * The supplementary file ```public-resolvers-ipv4s.csv``` is used within the analysis scripts to check the identified DoQ resolvers against a list of known public resolvers used in related work
-* The folder ```adoption``` contains the DoUDP ZMap measurements from the first and the last week of the measurement study
-* The folder ```misc``` contains the negotiated DoQ as well as QUIC versions and the X.509 certificates of all DoQ verified resolvers during the measurement study. In addition, the databases also contain the measurement results for the ```edns-tcp-keepalive``` DNS extension, ```TCP Fast Open```, as well as ```QUIC 0-RTT```
-* The folder ```performance``` contains the performance measurements of our study. In addition, the database also contains the ```qlogs``` of the DoQ measurements, and the protocol-specific RTT measurements (traceroutes) using UDP, TCP, and QUIC
 
-1. Preparations
+1. Dataset Overview
+* The dataset is provided at https://doi.org/10.14459/2022mp1647204
+* The folder ```adoption.zip``` contains the DoUDP ZMap measurements from the first and the last week of the measurement study
+* The folder ```misc.zip``` contains the negotiated DoQ as well as QUIC versions and the X.509 certificates of all DoQ verified resolvers during the measurement study. In addition, the databases also contain the measurement results for the ```edns-tcp-keepalive``` DNS extension, ```TCP Fast Open```, as well as ```QUIC 0-RTT```
+* The folder ```performance.zip``` contains the performance measurements of our study. In addition, the database also contains the ```qlogs``` of the DoQ measurements, and the protocol-specific RTT measurements (traceroutes) using UDP, TCP, and QUIC
+
+2. Preparations
 * Clone this repository to a machine running ```Jupyter Notebook``` or ```JupyterLab```
-* To minimize performance degradation through swapping, use a machine with at least 32GB of RAM 
-* Switch to the cloned directory
-* Run ```git lfs pull``` in order to retrieve the raw data
+* To minimize performance degradation through swapping, use a machine with at least 32GB of RAM
+* Download the dataset (https://doi.org/10.14459/2022mp1647204) to the cloned directory switch to the cloned directory
+* Extract ```adoption.zip``` to the subdirectory ```adoption/```
+* Extract ```misc.zip``` to the subdirectory ```misc/```
+* Extract ```performance.zip``` to the subdirectory ```performance/```
 
-2. Adoption
-* Switch to the ```adoption/``` directory
-* Extract the DoUDP adoption measurement csvs: ```tar -xvf 05-07-2021-53.csv.tar.gz``` and ```tar -xvf 17-01-2022-53.csv.tar.gz```
+3. Adoption
 * Run the Jupyter Notebook ```adoption.ipynb```
 
-3. Performance
-* Switch to the ```performance/``` directory
-* Concatenate the partial performance measurements files: ```cat measurements.w03.db.tar.gz.part.* > measurements.w03.db.tar.gz```
-* Extract the performance measurements sqlite db: ```tar -xvf measurements.w03.db.tar.gz```
+4. Performance
 * Run the Jupyter Notebook ```performance.ipynb```
 
 ---
