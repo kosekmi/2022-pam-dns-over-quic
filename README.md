@@ -6,7 +6,9 @@ Technical University of Munich
 
 [PAM 2022](https://pam2022.nl/), March 28&ndash;30, 2022.
 
-[Pre-print &rarr;] https://arxiv.org/abs/2202.02987
+[Paper Arxiv &rarr;] https://arxiv.org/abs/2202.02987
+
+[Paper SpringerLink &rarr;] https://doi.org/10.1007/978-3-030-98785-5_24
 
 [Dataset &rarr;] https://doi.org/10.14459/2022mp1647204
 
